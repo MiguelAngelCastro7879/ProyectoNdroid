@@ -14,4 +14,22 @@
         android:background="@color/purple_200"
         android:layout_gravity="left|top" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:text="boton2"
+        android:background="@color/purple_200"
+        android:layout_gravity="center_horizontal|top"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:text="boton_3"
+        android:background="@color/purple_200"
+        android:layout_gravity="right|top"
+        />
+
 </FrameLayout>
