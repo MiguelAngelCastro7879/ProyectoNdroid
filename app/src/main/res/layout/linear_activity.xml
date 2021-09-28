@@ -8,10 +8,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:text="Bienvenido"
-        android:textSize="25dp"
+        android:text="@string/bienvenido"
+        android:textSize="25sp"
         android:gravity="center_vertical"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Correo"
+        android:textSize="25sp"
+        android:id="@+id/correo"
+        android:layout_weight="1"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Contraseña"
+        android:textSize="25sp"
+        android:id="@+id/password"
+        android:layout_weight="1"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#0E8AEE"
+        android:textAlignment="center"
+        />
+
+
 
 </LinearLayout>
