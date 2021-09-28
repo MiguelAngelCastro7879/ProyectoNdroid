@@ -13,7 +13,9 @@
         android:id="@+id/btn1"
         android:text="linearlayout"
         android:background="@color/purple_200"
-        android:layout_gravity="left|top" />
+        android:layout_gravity="left|top"
+        android:onClick="ir_a"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -22,6 +24,7 @@
         android:text="boton2"
         android:background="@color/purple_200"
         android:layout_gravity="center_horizontal|top"
+        android:onClick="ir_a"
         />
 
     <Button
@@ -31,6 +34,7 @@
         android:text="boton_3"
         android:background="@color/purple_200"
         android:layout_gravity="right|top"
+        android:onClick="ir_a"
         />
 
 
@@ -41,6 +45,7 @@
         android:text="boton_4"
         android:background="@color/purple_200"
         android:layout_gravity="center_vertical|left"
+        android:onClick="ir_a"
         />
 
     <Button
@@ -50,6 +55,7 @@
         android:text="boton_5"
         android:background="@color/purple_200"
         android:layout_gravity="center"
+        android:onClick="ir_a"
 
         />
 
@@ -60,6 +66,7 @@
         android:text="boton_6"
         android:background="@color/purple_200"
         android:layout_gravity="center_vertical|right"
+        android:onClick="ir_a"
         />
 
     <Button
@@ -69,6 +76,7 @@
         android:text="boton_7"
         android:background="@color/purple_200"
         android:layout_gravity="left|bottom"
+        android:onClick="ir_a"
         />
 
     <Button
@@ -78,6 +86,7 @@
         android:text="boton_8"
         android:background="@color/purple_200"
         android:layout_gravity="center_horizontal|bottom"
+        android:onClick="ir_a"
 
         />
 
@@ -88,6 +97,7 @@
         android:text="boton_9"
         android:background="@color/purple_200"
         android:layout_gravity="right|bottom"
+        android:onClick="ir_a"
         />
 
 </FrameLayout>
