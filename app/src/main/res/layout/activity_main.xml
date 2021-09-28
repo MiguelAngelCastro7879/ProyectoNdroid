@@ -32,4 +32,61 @@
         android:layout_gravity="right|top"
         />
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn4"
+        android:text="boton_4"
+        android:background="@color/purple_200"
+        android:layout_gravity="center_vertical|left"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn5"
+        android:text="boton_5"
+        android:background="@color/purple_200"
+        android:layout_gravity="center"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn6"
+        android:text="boton_6"
+        android:background="@color/purple_200"
+        android:layout_gravity="center_vertical|right"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn7"
+        android:text="boton_7"
+        android:background="@color/purple_200"
+        android:layout_gravity="left|bottom"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn8"
+        android:text="boton_8"
+        android:background="@color/purple_200"
+        android:layout_gravity="center_horizontal|bottom"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn9"
+        android:text="boton_9"
+        android:background="@color/purple_200"
+        android:layout_gravity="right|bottom"
+        />
+
 </FrameLayout>
