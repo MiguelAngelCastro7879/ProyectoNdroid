@@ -21,6 +21,8 @@
         android:text="1"
         android:layout_below="@+id/pantalla"
         android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -29,6 +31,8 @@
         android:text="2"
         android:layout_toEndOf="@+id/one"
         android:layout_below="@+id/pantalla"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -37,6 +41,8 @@
         android:text="3"
         android:layout_toEndOf="@+id/two"
         android:layout_below="@+id/pantalla"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -46,6 +52,8 @@
         android:layout_toEndOf="@+id/three"
         android:layout_below="@+id/pantalla"
         android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -54,8 +62,9 @@
         android:text="x"
         android:layout_below="@+id/entre"
         android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,8 +72,9 @@
         android:text="6"
         android:layout_below="@+id/three"
         android:layout_toStartOf="@+id/por"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,8 +82,9 @@
         android:text="5"
         android:layout_below="@+id/two"
         android:layout_toStartOf="@+id/six"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,8 +92,9 @@
         android:text="4"
         android:layout_below="@+id/one"
         android:layout_toStartOf="@+id/five"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,6 +102,8 @@
         android:text="7"
         android:layout_below="@+id/four"
         android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -98,6 +112,8 @@
         android:text="8"
         android:layout_toEndOf="@+id/seven"
         android:layout_below="@+id/five"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -106,6 +122,8 @@
         android:text="9"
         android:layout_toEndOf="@+id/eight"
         android:layout_below="@+id/six"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -115,6 +133,8 @@
         android:layout_toEndOf="@+id/three"
         android:layout_below="@+id/por"
         android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
     <Button
         android:layout_width="wrap_content"
@@ -123,8 +143,9 @@
         android:text="+"
         android:layout_below="@+id/menos"
         android:layout_alignParentEnd="true"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -132,8 +153,9 @@
         android:text="="
         android:layout_below="@+id/nine"
         android:layout_toStartOf="@+id/mas"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -141,8 +163,9 @@
         android:text="0"
         android:layout_below="@+id/eight"
         android:layout_toStartOf="@+id/igual"
+        android:textSize="30dp"
+        android:background="@color/purple_200"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -152,7 +175,6 @@
         android:layout_toStartOf="@+id/zero"
         android:textSize="30dp"
         android:background="@color/purple_200"
-        android:layout_alignParentBottom="true"
         />
 
 
