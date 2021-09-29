@@ -3,4 +3,6 @@
     <string name="correo">correo</string>
     <string name="bienvenido">Bienvenido</string>
     <string name="password">password</string>
+    <string name="_1">1</string>
+    <string name="ingresa_numeros">Ingresa numeros</string>
 </resources>

@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn1:
                 setContentView(R.layout.linear_activity);
                 break;
-//            case R.id.btn2:
-//                setContentView(R.layout.linear_activity);
-//                break;
+            case R.id.btn2:
+                setContentView(R.layout.relative_activity);
+                break;
 //            case R.id.btn3:
 //                setContentView(R.layout.linear_activity);
 //                break;
@@ -58,4 +58,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 }
