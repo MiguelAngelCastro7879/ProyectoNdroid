@@ -4,21 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:hint="@string/ingresa_numeros"
-        android:textSize="50sp"
-        android:id="@+id/pantalla"
-        android:layout_weight="1"
-        />
-    <LinearLayout
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-        <Button
+        android:hint="Ingresa numeros" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:id="@+id/f1">
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/one"
@@ -27,7 +29,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/two"
@@ -36,7 +38,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/three"
@@ -45,7 +47,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/entre"
@@ -54,13 +56,15 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <Button
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/f1"
+            android:id="@+id/f2"
+            >
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/four"
@@ -69,7 +73,7 @@
             android:background="@color/purple_200"
         android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/five"
@@ -78,7 +82,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/six"
@@ -87,7 +91,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/por"
@@ -96,14 +100,14 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <Button
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/f2"
+            android:id="@+id/f3">
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/seven"
@@ -112,7 +116,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/eight"
@@ -121,7 +125,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/nine"
@@ -130,7 +134,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/menos"
@@ -139,13 +143,14 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <Button
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/f3"
+            android:id="@+id/f4">
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/point"
@@ -154,7 +159,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/zero"
@@ -163,7 +168,7 @@
             android:background="@color/purple_200"
         android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/igual"
@@ -172,7 +177,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-        <Button
+            <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/mas"
@@ -181,8 +186,7 @@
             android:background="@color/purple_200"
             android:layout_weight="1"
             />
-    </LinearLayout>
-
-
+        </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
