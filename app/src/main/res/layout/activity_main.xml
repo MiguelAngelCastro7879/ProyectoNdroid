@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn6"
-        android:text="boton_6"
+        android:text="constraint"
         android:background="@color/purple_200"
         android:layout_gravity="center_vertical|right"
         android:onClick="ir_a"
