@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn6:
                 setContentView(R.layout.constraint_activity);
                 break;
-//            case R.id.btn7:
-//                setContentView(R.layout.linear_activity);
-//                break;
+            case R.id.btn7:
+                setContentView(R.layout.constraint_activity2);
+                break;
 //            case R.id.btn8:
 //                setContentView(R.layout.linear_activity);
 //                break;
