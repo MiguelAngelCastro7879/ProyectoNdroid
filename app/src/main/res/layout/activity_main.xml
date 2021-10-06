@@ -69,6 +69,7 @@
         android:onClick="ir_a"
         />
 
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,9 +77,8 @@
         android:text="boton_7"
         android:background="@color/purple_200"
         android:layout_gravity="left|bottom"
-        android:onClick="ir_a"
+        android:onClick="texto"
         />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

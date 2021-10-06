@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 
@@ -44,10 +45,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn6:
                 setContentView(R.layout.constraint_activity2);
                 break;
-//            case R.id.btn7:
-//                break;
 //            case R.id.btn8:
-//                setContentView(R.layout.linear_activity);
 //                break;
 //            case R.id.btn9:
 //                setContentView(R.layout.linear_activity);
@@ -58,4 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void texto(View view) {
+        Toast.makeText(this, "Holaaaaa", Toast.LENGTH_LONG).show();
+    }
 }
