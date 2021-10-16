@@ -11,6 +11,7 @@ import java.io.BufferedReader;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     //Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
+    int turno=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +61,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());
+        }
+    }
+
+    public void tictac(View view) {
+        Button b=(Button) view;
+        if(turno==0){
+            b.setText("X");
+            b.setEnabled(false);
+            turno=1;
+        }else{
+            b.setText("O");
+            b.setEnabled(false);
+            turno=0;
         }
     }
 }
