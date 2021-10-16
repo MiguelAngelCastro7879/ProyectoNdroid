@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,30 +10,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn1"
-        android:text="linearlayout"
+        android:text="@string/linearlayout"
         android:background="@color/purple_200"
-        android:layout_gravity="left|top"
-        android:onClick="ir_a"
+        android:layout_gravity="start|top"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn2"
-        android:text="RelativeCalc"
+        android:text="@string/relativecalc"
         android:background="@color/purple_200"
         android:layout_gravity="center_horizontal|top"
-        android:onClick="ir_a"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn3"
-        android:text="linearcalc"
+        android:text="@string/linearcalc"
         android:background="@color/purple_200"
-        android:layout_gravity="right|top"
-        android:onClick="ir_a"
+        android:layout_gravity="end|top"
         />
 
 
@@ -42,20 +38,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn4"
-        android:text="RL_Calc"
+        android:text="@string/rl_calc"
         android:background="@color/purple_200"
-        android:layout_gravity="center_vertical|left"
-        android:onClick="ir_a"
+        android:layout_gravity="center_vertical|start"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn5"
-        android:text="Constraint1"
+        android:text="@string/constraint1"
         android:background="@color/purple_200"
         android:layout_gravity="center"
-        android:onClick="ir_a"
 
         />
 
@@ -63,20 +57,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn6"
-        android:text="constraint2"
+        android:text="@string/constraint2"
         android:background="@color/purple_200"
-        android:layout_gravity="center_vertical|right"
-        android:onClick="ir_a"
-        />
+        android:layout_gravity="center_vertical|end"
+        tools:ignore="RtlHardcoded" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn7"
-        android:text="boton_7"
+        android:text="@string/boton_7"
         android:background="@color/purple_200"
-        android:layout_gravity="left|bottom"
+        android:layout_gravity="start|bottom"
         android:onClick="texto"
         />
     <Button
@@ -86,18 +79,16 @@
         android:text="boton_8"
         android:background="@color/purple_200"
         android:layout_gravity="center_horizontal|bottom"
-        android:onClick="ir_a"
 
-        />
+        tools:ignore="HardcodedText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn9"
-        android:text="boton_9"
+        android:text="@string/boton_9"
         android:background="@color/purple_200"
-        android:layout_gravity="right|bottom"
-        android:onClick="ir_a"
+        android:layout_gravity="end|bottom"
         />
 
 </FrameLayout>

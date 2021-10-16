@@ -1,8 +1,37 @@
 <resources>
     <string name="app_name">ProyectosNdroid</string>
-    <string name="correo">correo</string>
     <string name="bienvenido">Bienvenido</string>
-    <string name="password">password</string>
     <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
     <string name="ingresa_numeros">Ingresa numeros</string>
+    <string name="linearlayout">linearlayout</string>
+    <string name="relativecalc">RelativeCalc</string>
+    <string name="linearcalc">linearcalc</string>
+    <string name="rl_calc">RL_Calc</string>
+    <string name="constraint1">Constraint!</string>
+    <string name="constraint2">constraint2</string>
+    <string name="boton_7">boton_7</string>
+    <string name="boton_9">boton_9</string>
+    <string name="dividir">/</string>
+    <string name="resta">-</string>
+    <string name="parentesis">( )</string>
+    <string name="punto">.</string>
+    <string name="suma">+</string>
+    <string name="igual">=</string>
+    <string name="c">c</string>
+    <string name="x">x</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="iniciar_sesion">iniciar sesion</string>
+    <string name="olvidaste_tu_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="exponente">x^</string>
+    <string name="modulo">%</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="Ingresa numeros" />
+        android:hint="@string/ingresa_numeros"
+        android:inputType="text" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,38 +26,38 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/one"
-            android:text="1"
-            android:textSize="30dp"
+            android:text="@string/_1"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/two"
-            android:text="2"
-            android:textSize="30dp"
+            android:text="@string/_2"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/three"
-            android:text="3"
-            android:textSize="30dp"
+            android:text="@string/_3"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/entre"
-            android:text="/"
-            android:textSize="30dp"
+            android:text="@string/dividir"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,38 +70,38 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/four"
-            android:text="4"
-            android:textSize="30dp"
+            android:text="@string/_4"
+            android:textSize="30sp"
             android:background="@color/purple_200"
         android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/five"
-            android:text="5"
-            android:textSize="30dp"
+            android:text="@string/_5"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/six"
-            android:text="6"
-            android:textSize="30dp"
+            android:text="@string/_6"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/por"
-            android:text="x"
-            android:textSize="30dp"
+            android:text="@string/x"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,81 +113,79 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/seven"
-            android:text="7"
-            android:textSize="30dp"
+            android:text="@string/_7"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/eight"
-            android:text="8"
-            android:textSize="30dp"
+            android:text="@string/_8"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/nine"
-            android:text="9"
-            android:textSize="30dp"
+            android:text="@string/_9"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/menos"
-            android:text="-"
-            android:textSize="30dp"
+            android:text="@string/resta"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_below="@+id/f3"
-            android:id="@+id/f4">
+            android:layout_below="@+id/f3">
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/point"
-            android:text="."
-            android:textSize="30dp"
+                android:text="@string/punto"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/zero"
-            android:text="0"
-            android:textSize="30dp"
+            android:text="@string/_0"
+            android:textSize="30sp"
             android:background="@color/purple_200"
         android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/igual"
-            android:text="="
-            android:textSize="30dp"
+            android:text="@string/igual"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
             <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/mas"
-            android:text="+"
-            android:textSize="30dp"
+            android:text="@string/suma"
+            android:textSize="30sp"
             android:background="@color/purple_200"
             android:layout_weight="1"
-            />
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
     </RelativeLayout>
 
