@@ -34,4 +34,6 @@
     <string name="olvidaste_tu_contrasena">¿Olvidaste tu contraseña?</string>
     <string name="exponente">x^</string>
     <string name="modulo">%</string>
+    <string name="empate">Hay un empate</string>
+    <string name="reiniciar">Reiniciar</string>
 </resources>
