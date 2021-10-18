@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public int turno=1,tiros=1;
     int[][] jugadas = new int[3][3];
-    TextView texto,xf,of,xc,oc;
+    TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
