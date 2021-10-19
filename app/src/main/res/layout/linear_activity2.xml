@@ -7,53 +7,23 @@
     android:background="@color/teal_700">
 
     <TextView
-        android:id="@+id/pantalla"
-        android:layout_width="match_parent"
-        android:layout_height="0sp"
-        android:layout_weight="2"
-        android:hint="@string/ingresa_numeros"
-        android:textSize="50sp"
-        android:textAlignment="center"/>
-
-    <LinearLayout
+        android:id="@+id/resultado"
         android:layout_width="match_parent"
         android:layout_height="0sp"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/parentesis"
-            android:textSize="30sp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/exponente"
-            android:textSize="30sp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/modulo"
-            android:textSize="30sp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/c"
-            android:textSize="30sp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
-    </LinearLayout>
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/operacion"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:hint="@string/ingresa_numeros"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -68,7 +38,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights" />
+            tools:ignore="ButtonStyle,NestedWeights"
+            android:onClick="calc"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -77,7 +48,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -86,7 +58,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -95,7 +68,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/teal_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -110,7 +84,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
         android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights" />
+            tools:ignore="ButtonStyle,NestedWeights"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -119,7 +94,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -128,7 +104,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -137,7 +114,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/teal_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
 
     </LinearLayout>
     <LinearLayout
@@ -153,7 +131,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights" />
+            tools:ignore="ButtonStyle,NestedWeights"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -162,7 +141,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -171,7 +151,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -180,7 +161,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/teal_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -194,7 +176,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights" />
+            tools:ignore="ButtonStyle,NestedWeights"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -203,7 +186,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
         android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -212,7 +196,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -221,7 +206,8 @@
             android:textSize="30sp"
             android:backgroundTint="@color/teal_200"
             android:layout_weight="1"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle"
+            android:onClick="calc" />
     </LinearLayout>
 
 

@@ -1,11 +1,13 @@
 package com.example.proyectosndroid;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.proyectosndroid.calculadora;
 
 import java.io.BufferedReader;
 
@@ -260,5 +262,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button7).setEnabled(false);
         findViewById(R.id.button8).setEnabled(false);
         findViewById(R.id.button9).setEnabled(false);
+    }
+
+    TextView res, oper;
+    public void calc(View view) {
+
+        res= findViewById(R.id.resultado);
+        oper=findViewById(R.id.operacion);
+        calculadora operaciones=new calculadora();
+        operaciones.imprimir(view,res,oper);
+
+
     }
 }
