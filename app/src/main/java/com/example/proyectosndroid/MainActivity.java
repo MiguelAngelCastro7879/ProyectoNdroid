@@ -1,6 +1,8 @@
 package com.example.proyectosndroid;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +22,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn1).setOnClickListener(this);findViewById(R.id.btn2).setOnClickListener(this);findViewById(R.id.btn3).setOnClickListener(this);
         findViewById(R.id.btn4).setOnClickListener(this);findViewById(R.id.btn5).setOnClickListener(this);findViewById(R.id.btn6).setOnClickListener(this);
         findViewById(R.id.btn8).setOnClickListener(this);findViewById(R.id.btn9).setOnClickListener(this);
+        //se dice cuantos milisegundos son y cuantos milisegundos se le van a restar
+        new CountDownTimer(10000,1000) {
+            @Override
+            public void onTick(long l) {
+                Toast.makeText(MainActivity.this,""+l/1000,Toast.LENGTH_SHORT).show();
+            }
 
+            @Override
+            public void onFinish() {
+
+            }
+        }.start();
     }
 
     public void texto(View view) {
@@ -37,7 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setContentView(R.layout.relative_activity);
                 break;
             case R.id.btn3:
-                setContentView(R.layout.linear_activity2);
+//                setContentView(R.layout.linear_activity2);
+//                recibe el contexto y la clase que quiere abrir
+//                Intent calc=new Intent(MainActivity.this, calculadora_linear2.class);
+//                startActivity(calc);
+                startActivity(new Intent(MainActivity.this, calculadora_linear2.class));
                 break;
             case R.id.btn4:
                 setContentView(R.layout.linear_relative_activity);

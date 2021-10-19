@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.proyectosndroid">
 
-<!--    android:theme="@style/Theme.ProyectosNdroid"-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".presentacion"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".calculadora_linear2"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
