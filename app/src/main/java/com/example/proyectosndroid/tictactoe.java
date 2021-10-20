@@ -1,19 +1,35 @@
 package com.example.proyectosndroid;
 
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class tictactictac extends AppCompatActivity {
+public class tictactoe extends AppCompatActivity implements View.OnClickListener {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.tictactoe);
+        findViewById(R.id.button1).setOnClickListener(this);
+        findViewById(R.id.button2).setOnClickListener(this);
+        findViewById(R.id.button3).setOnClickListener(this);
+        findViewById(R.id.button4).setOnClickListener(this);
+        findViewById(R.id.button5).setOnClickListener(this);
+        findViewById(R.id.button6).setOnClickListener(this);
+        findViewById(R.id.button7).setOnClickListener(this);
+        findViewById(R.id.button8).setOnClickListener(this);
+        findViewById(R.id.button9).setOnClickListener(this);
+    }
 
     public int turno=1,tiros=1;
     int[][] jugadas = new int[3][3];
     TextView texto;
 
-    public void juego(View boton){
-        Button b = (Button) boton;
+    @Override
+    public void onClick(View v) {
+        Button b = (Button) v;
         texto=findViewById(R.id.ganador);
 
         if (turno == 1) {
@@ -216,5 +232,4 @@ public class tictactictac extends AppCompatActivity {
         findViewById(R.id.button8).setEnabled(false);
         findViewById(R.id.button9).setEnabled(false);
     }
-
 }
