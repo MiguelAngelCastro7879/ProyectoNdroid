@@ -1,17 +1,11 @@
 package com.example.proyectosndroid;
 
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
-import com.example.proyectosndroid.calculadora;
-
-import java.io.BufferedReader;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -46,10 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         setContentView(R.layout.relative_activity);
                         break;
                     case R.id.btn3:
-//                setContentView(R.layout.linear_activity2);
-//                recibe el contexto y la clase que quiere abrir
-//                Intent calc=new Intent(MainActivity.this, calculadora_linear2.class);
-//                startActivity(calc);
                         startActivity(new Intent(MainActivity.this, calculadora_linear2.class));
                         break;
                     case R.id.btn4:
@@ -62,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         setContentView(R.layout.constraint_activity2);
                         break;
                     case R.id.btn8:
-                        setContentView(R.layout.tictactoe);
+                        startActivity(new Intent(MainActivity.this, tictactoe.class));
                         break;
                     default:
                         throw new IllegalStateException("Unexpected value: " + v.getId());
@@ -71,18 +61,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }.start();
     }
 
-    public void tictac(View view) {
-        tictactictac jueguito=new tictactictac();
-        jueguito.juego(view);
-    }
-    TextView res, oper;
-    public void calc(View view) {
-
-        res= findViewById(R.id.resultado);
-        oper=findViewById(R.id.operacion);
-        calculadora operaciones=new calculadora();
-        operaciones.imprimir(view,res,oper);
-
-
-    }
 }
