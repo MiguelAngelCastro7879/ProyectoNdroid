@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     case R.id.btn8:
                         startActivity(new Intent(MainActivity.this, tictactoe.class));
                         break;
+                    case R.id.btn9:
+                        startActivity(new Intent(MainActivity.this, intents_expimp.class));
+                        break;
+
                     default:
                         throw new IllegalStateException("Unexpected value: " + v.getId());
                 }

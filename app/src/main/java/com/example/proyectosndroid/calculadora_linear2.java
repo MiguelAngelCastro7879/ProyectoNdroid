@@ -9,6 +9,9 @@ import android.widget.TextView;
 public class calculadora_linear2 extends AppCompatActivity implements View.OnClickListener {
 
     TextView resultado, operacion;
+    String operador;
+    double  oper1,oper2;
+    boolean res=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,70 +49,58 @@ public class calculadora_linear2 extends AppCompatActivity implements View.OnCli
             case R.id.eight:
             case R.id.nine:
             case R.id.zero:
+                if(res==true){
+                    resultado.setText("");
+                    res=false;
+                }
                 operacion.setText(operacion.getText()+String.valueOf(boton.getText()));
                 break;
-//            case R.id.por:;
-//                break;
-//            case R.id.entre:
-//                break;
-//            case R.id.menos:
-//                break;
-//            case R.id.mas:
-//                break;
-//            case R.id.igual:
-//                break;
+            case R.id.por:
+                operador="*";
+                oper1=Double.parseDouble(operacion.getText().toString());
+                resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText());
+                operacion.setText("");
+                break;
+            case R.id.entre:
+                operador="/";
+                oper1=Double.parseDouble(operacion.getText().toString());
+                resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText());
+                operacion.setText("");
+                break;
+            case R.id.menos:
+                operador="-";
+                oper1=Double.parseDouble(operacion.getText().toString());
+                resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText());
+                operacion.setText("");
+                break;
+            case R.id.mas:
+                operador="+";
+                oper1=Double.parseDouble(operacion.getText().toString());
+                resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText());
+                operacion.setText("");
+                break;
+            case R.id.igual:
+                oper2=Double.parseDouble(operacion.getText().toString());
+                switch (operador){
+                    case "*":
+                        resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText()+ (oper1*oper2));
+                        break;
+                    case "+":
+                        resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText()+ (oper1+oper2));
+                        break;
+                    case "-":
+                        resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText()+ (oper1-oper2));
+                        break;
+                    case "/":
+                        resultado.setText(String.valueOf(resultado.getText()) + operacion.getText() + boton.getText()+ (oper1/oper2));
+                        break;
+                }
+                operacion.setText("");
+                res=true;
+                break;
             default:
                 throw new IllegalStateException("Unexpected value: " + v.getId());
         }
-
-    }
-
-    double variante_a=0,variante_b=0;
-//    public void operaciones(View view, TextView res, TextView oper){
-//        Button v=(Button)view;
-//        switch (v.getId()){
-//            case R.id.one:
-//            case R.id.two:
-//            case R.id.three:
-//            case R.id.four:
-//            case R.id.five:
-//            case R.id.six:
-//            case R.id.seven:
-//            case R.id.eight:
-//            case R.id.nine:
-//            case R.id.zero:
-//                oper.setText(oper.getText()+String.valueOf(v.getText()));
-//                break;
-//            case R.id.por:
-//                res.setText(oper.getText()+String.valueOf(v.getText()));
-//                oper.setText("");
-//                break;
-//            case R.id.entre:
-//                break;
-//            case R.id.menos:
-//                break;
-//            case R.id.mas:
-//                break;
-//            case R.id.igual:
-//                break;
-//            default:
-//                throw new IllegalStateException("Unexpected value: " + v.getId());
-//        }
-//
-//    }
-    public void sumar(){
-
-    }
-    public void restar(){
-
-    }
-    public void multiplicar(){
-
-    }
-    public void dividir(){
-
-    }
-    public void igual(){
 
     }
 
