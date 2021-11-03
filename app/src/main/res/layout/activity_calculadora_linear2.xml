@@ -29,6 +29,99 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/seven"
+            android:text="@string/_7"
+            android:textSize="30sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,NestedWeights"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/eight"
+            android:text="@string/_8"
+            android:textSize="30sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nine"
+            android:text="@string/_9"
+            android:textSize="30sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/entre"
+            android:text="@string/dividir"
+            android:textSize="30sp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/four"
+            android:text="@string/_4"
+            android:textSize="30sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle,NestedWeights"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/five"
+            android:text="@string/_5"
+            android:textSize="30sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/six"
+            android:text="@string/_6"
+            android:textSize="30sp"
+            android:backgroundTint="@color/purple_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/por"
+            android:text="@string/x"
+            android:textSize="30sp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
         >
@@ -65,99 +158,6 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/entre"
-            android:text="@string/dividir"
-            android:textSize="30sp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle"
-             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/four"
-            android:text="@string/_4"
-            android:textSize="30sp"
-            android:backgroundTint="@color/purple_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights"
-             />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/five"
-            android:text="@string/_5"
-            android:textSize="30sp"
-            android:backgroundTint="@color/purple_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/six"
-            android:text="@string/_6"
-            android:textSize="30sp"
-            android:backgroundTint="@color/purple_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/por"
-            android:text="@string/x"
-            android:textSize="30sp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle"
-             />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/seven"
-            android:text="@string/_7"
-            android:textSize="30sp"
-            android:backgroundTint="@color/purple_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle,NestedWeights"
-             />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/eight"
-            android:text="@string/_8"
-            android:textSize="30sp"
-            android:backgroundTint="@color/purple_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle"
-             />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/nine"
-            android:text="@string/_9"
-            android:textSize="30sp"
-            android:backgroundTint="@color/purple_200"
-            android:layout_weight="1"
-            tools:ignore="ButtonStyle"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
             android:id="@+id/menos"
             android:text="@string/resta"
             android:textSize="30sp"
@@ -179,7 +179,7 @@
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
             tools:ignore="ButtonStyle,NestedWeights"
-             />
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -189,7 +189,7 @@
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
             tools:ignore="ButtonStyle"
-             />
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -199,7 +199,7 @@
             android:backgroundTint="@color/purple_200"
             android:layout_weight="1"
             tools:ignore="ButtonStyle"
-             />
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -209,7 +209,7 @@
             android:backgroundTint="@color/teal_200"
             android:layout_weight="1"
             tools:ignore="ButtonStyle"
-             />
+            />
     </LinearLayout>
 
 

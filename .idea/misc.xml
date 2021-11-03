@@ -3,21 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22552083333333334" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/drawable/ic_baseline_7mp_24.xml" value="0.22552083333333334" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22552083333333334" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/drawable/ic_maikiprojects.xml" value="0.22552083333333334" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/activity_calculadora_linear2.xml" value="0.209375" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/activity_intents_expimp.xml" value="0.209375" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/activity_main.xml" value="0.16574074074074074" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/activity_tictactoe.xml" value="0.1953125" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/constraint_activity2.xml" value="0.20555555555555555" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/intents.xml" value="0.209375" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/linear_activity.xml" value="0.20615384615384616" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/linear_activity2.xml" value="0.20615384615384616" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/linear_relative_activity.xml" value="0.20555555555555555" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/layout/tictactoe.xml" value="0.16574074074074074" />
-        <entry key="..\:/ProyectosNdroid - copia/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid - copia/app/src/main/res/layout/activity_calculadora_linear2.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid - copia/app/src/main/res/layout/activity_main.xml" value="0.1787037037037037" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid - copia/app/src/main/res/layout/constraint_activity.xml" value="0.1203125" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid - copia/app/src/main/res/layout/constraint_activity2.xml" value="0.1203125" />
