@@ -1,12 +1,15 @@
 package com.example.proyectosndroid.Modelos;
 
-public class Alumnos {
+public class Alumno {
     private String nombre;
     private String matricula;
     private String telefono;
     private int edad;
 
-    public Alumnos(String nombre, String matricula, String telefono, int edad) {
+    public Alumno() {
+    }
+
+    public Alumno(String nombre, String matricula, String telefono, int edad) {
         this.nombre = nombre;
         this.matricula = matricula;
         this.telefono = telefono;
