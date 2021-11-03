@@ -12,13 +12,13 @@ public class presentacion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presentacion);
-        new CountDownTimer(3000,1000) {
+        new CountDownTimer(2000,1000) {
             @Override
             public void onTick(long l) {
             }
             @Override
             public void onFinish() {
-                startActivity(new Intent(presentacion.this, MainActivity.class));
+                startActivity(new Intent(presentacion.this, index.class));
 
             }
         }.start();
