@@ -1,5 +1,6 @@
 package com.example.proyectosndroid;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ public class index extends AppCompatActivity implements View.OnClickListener {
         findViewById(R.id.recycle).setOnClickListener(this);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -25,6 +27,8 @@ public class index extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(index.this, RecycleView.class));
                 break;
 
+            default:
+                throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.example.proyectosndroid;
 
+import android.annotation.SuppressLint;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
@@ -16,6 +17,7 @@ public class intents_expimp extends AppCompatActivity implements View.OnClickLis
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()){

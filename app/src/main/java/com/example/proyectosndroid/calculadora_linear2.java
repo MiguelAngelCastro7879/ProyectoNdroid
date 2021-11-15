@@ -1,6 +1,8 @@
 package com.example.proyectosndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +37,7 @@ public class calculadora_linear2 extends AppCompatActivity implements View.OnCli
         operacion=findViewById(R.id.operacion);
 
     }
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         Button boton=(Button)v;
@@ -49,11 +52,11 @@ public class calculadora_linear2 extends AppCompatActivity implements View.OnCli
             case R.id.eight:
             case R.id.nine:
             case R.id.zero:
-                if(res==true){
+                if(res){
                     resultado.setText("");
                     res=false;
                 }
-                operacion.setText(operacion.getText()+String.valueOf(boton.getText()));
+                operacion.setText(operacion.getText() + String.valueOf(boton.getText()));
                 break;
             case R.id.por:
                 operador="*";

@@ -14,8 +14,10 @@ import java.util.List;
 
 public class RecycleView extends AppCompatActivity {
 
-//    Alumno a= new Alumno("Miguel","19170023","8715722538",19);
-//    Alumno b= new Alumno();
+/*
+ Alumno a= new Alumno("Miguel","19170023","8715722538",19);
+ Alumno b= new Alumno();
+*/
 
 
     RecyclerView re;

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class AlumnoAdapter extends  RecyclerView.Adapter<AlumnoAdapter.ViewHolder> {
 
-    private List<Alumno> lista;
+    private final List<Alumno> lista;
 
     public AlumnoAdapter(List<Alumno> lista) {
         this.lista = lista;
@@ -42,7 +42,7 @@ public class AlumnoAdapter extends  RecyclerView.Adapter<AlumnoAdapter.ViewHolde
         return lista.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView matricula, nombre, telefono, edad;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

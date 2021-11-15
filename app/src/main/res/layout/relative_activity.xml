@@ -15,88 +15,96 @@
         android:hint="@string/ingresa_numeros"
         android:textSize="50sp"
         tools:ignore="TextContrastCheck" />
+
     <Button
+        android:id="@+id/one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/one"
-        android:text="@string/_1"
         android:layout_below="@+id/pantalla"
         android:layout_alignParentStart="true"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/two"
-        android:text="@string/_2"
-        android:layout_toEndOf="@+id/one"
-        android:layout_below="@+id/pantalla"
+        android:text="@string/_1"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
 
-        android:textSize="30sp"
-        android:background="@color/purple_200"
-        />
     <Button
+        android:id="@+id/two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/three"
-        android:text="@string/_3"
-        android:layout_toEndOf="@+id/two"
         android:layout_below="@+id/pantalla"
-        android:textSize="30sp"
+        android:layout_toEndOf="@+id/one"
         android:background="@color/purple_200"
-        />
+
+        android:text="@string/_2"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/pantalla"
+        android:layout_toEndOf="@+id/two"
+        android:background="@color/purple_200"
+        android:text="@string/_3"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
+    <Button
         android:id="@+id/entre"
-        android:text="@string/dividir"
-        android:layout_toEndOf="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/pantalla"
         android:layout_alignParentEnd="true"
-        android:textSize="30sp"
+        android:layout_toEndOf="@+id/three"
         android:background="@color/purple_200"
-        />
+        android:text="@string/dividir"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/por"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/por"
-        android:text="@string/x"
         android:layout_below="@+id/entre"
         android:layout_alignParentEnd="true"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/x"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/six"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/six"
-        android:text="@string/_6"
         android:layout_below="@+id/three"
         android:layout_toStartOf="@+id/por"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/_6"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/five"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/five"
-        android:text="@string/_5"
         android:layout_below="@+id/two"
         android:layout_toStartOf="@+id/six"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/_5"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/four"
-        android:text="@string/_4"
         android:layout_below="@+id/one"
         android:layout_toStartOf="@+id/five"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/_4"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/seven"
@@ -106,77 +114,86 @@
         android:layout_alignParentStart="true"
         android:background="@color/purple_200"
         android:text="@string/_7"
+        android:textColor="#5E35B1"
         android:textSize="30sp" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/eight"
-        android:text="@string/_8"
-        android:layout_toEndOf="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/five"
-        android:textSize="30sp"
+        android:layout_toEndOf="@+id/seven"
         android:background="@color/purple_200"
-        />
+        android:text="@string/_8"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/nine"
-        android:text="@string/_9"
-        android:layout_toEndOf="@+id/eight"
-        android:layout_below="@+id/six"
-        android:textSize="30sp"
-        android:background="@color/purple_200"
-        />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/six"
+        android:layout_toEndOf="@+id/eight"
+        android:background="@color/purple_200"
+        android:text="@string/_9"
+        android:textColor="#5E35B1"
+        android:textSize="30sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
         android:id="@+id/menos"
-        android:text="@string/resta"
-        android:layout_toEndOf="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/por"
         android:layout_alignParentEnd="true"
-        android:textSize="30sp"
+        android:layout_toEndOf="@+id/three"
         android:background="@color/purple_200"
-        />
+        android:text="@string/resta"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/mas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/mas"
-        android:text="@string/suma"
         android:layout_below="@+id/menos"
         android:layout_alignParentEnd="true"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/suma"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/igual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/igual"
-        android:text="@string/igual"
         android:layout_below="@+id/nine"
         android:layout_toStartOf="@+id/mas"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/igual"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
+        android:id="@+id/zero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/zero"
-        android:text="@string/_0"
         android:layout_below="@+id/eight"
         android:layout_toStartOf="@+id/igual"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/_0"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/punto"
         android:layout_below="@+id/seven"
         android:layout_toStartOf="@+id/zero"
-        android:textSize="30sp"
         android:background="@color/purple_200"
-        />
+        android:text="@string/punto"
+        android:textColor="#5E35B1"
+        android:textSize="30sp" />
 
 
 

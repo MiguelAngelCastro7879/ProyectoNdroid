@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:orientation="vertical"
-    android:background="@color/amazul"
+    android:background="@color/verde_lima"
     android:layout_margin="5dp">
 
     <LinearLayout
@@ -17,17 +16,18 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Matricula"
+            android:text="@string/matricula"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:id="@+id/txtmatricula"/>
+            android:textSize="20sp"
+            android:id="@+id/txtmatricula"
+            tools:ignore="NestedWeights" />
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Edad"
+            android:text="@string/edad"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:id="@+id/txtedad"
             android:textAlignment="textEnd"
 
@@ -42,17 +42,18 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Nombre"
+            android:text="@string/nombre"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:id="@+id/txtnombre"/>
+            android:textSize="20sp"
+            android:id="@+id/txtnombre"
+            tools:ignore="NestedWeights" />
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Telefono"
+            android:text="@string/telefono"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:id="@+id/txttelefono"
             android:textAlignment="textEnd"
 

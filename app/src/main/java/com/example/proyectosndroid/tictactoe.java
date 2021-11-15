@@ -1,6 +1,8 @@
 package com.example.proyectosndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,6 +47,7 @@ public class tictactoe extends AppCompatActivity implements View.OnClickListener
         ganador();
 
     }
+    @SuppressLint("NonConstantResourceId")
     public void reg_jugada(int turno, Button b){
         switch (b.getId()){
             case R.id.button1:
@@ -74,6 +77,8 @@ public class tictactoe extends AppCompatActivity implements View.OnClickListener
             case R.id.button9:
                 jugadas[2][2]=turno;
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + b.getId());
         }
         tiros++;
     }

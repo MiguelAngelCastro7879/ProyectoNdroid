@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="48dp"
@@ -21,7 +22,8 @@
         android:hint="@string/correo"
         android:textSize="25sp"
         android:layout_weight="1"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
 
     <EditText
         android:layout_width="match_parent"
@@ -29,7 +31,8 @@
         android:hint="@string/contrase_a"
         android:textSize="25sp"
         android:layout_weight="1"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
 
     <Button
         android:layout_width="match_parent"
@@ -45,9 +48,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="@string/olvidaste_tu_contrasena"
-        android:textColor="#0E8AEE"
         android:textAlignment="center"
-        />
+        android:textColor="#0E8AEE"
+        tools:ignore="TextContrastCheck" />
 
 
 

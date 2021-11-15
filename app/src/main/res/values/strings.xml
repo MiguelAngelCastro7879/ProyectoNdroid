@@ -36,4 +36,16 @@
     <string name="modulo">%</string>
     <string name="empate">Hay un empate</string>
     <string name="reiniciar">Reiniciar</string>
+    <string name="edad">Edad</string>
+    <string name="matricula">Matricula</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Telefono</string>
+    <string name="intent_web">Intent Web</string>
+    <string name="intent_contactos">Intent contactos</string>
+    <string name="intent_llamada">Intent llamada</string>
+    <string name="intent_google">Intent google</string>
+    <string name="intent_voz">intent voz</string>
+    <string name="intent_alarma">Intent alarma</string>
+    <string name="button">Button</string>
+    <string name="_7_intents">7 Intents</string>
 </resources>

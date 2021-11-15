@@ -42,21 +42,23 @@
         android:id="@+id/button1"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="80sp"/>
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="80sp"/>
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button3"
@@ -68,17 +70,19 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        android:textSize="80sp"/>
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button5"
@@ -89,48 +93,53 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
-        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+        app:layout_constraintTop_toTopOf="@+id/guideline13"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        android:textSize="80sp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        android:textSize="80sp" />
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toStartOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        android:textSize="80sp" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="0sp"
         android:layout_height="0sp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
         app:layout_constraintTop_toTopOf="@+id/guideline14"
-        android:textSize="80sp"/>
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/ganador"
