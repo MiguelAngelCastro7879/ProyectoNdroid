@@ -48,4 +48,8 @@
     <string name="intent_alarma">Intent alarma</string>
     <string name="button">Button</string>
     <string name="_7_intents">7 Intents</string>
+    <string name="onCLick" />
+    <string name="onclick">onCLick</string>
+    <string name="gato">gato</string>
+    <string name="intents">intents</string>
 </resources>

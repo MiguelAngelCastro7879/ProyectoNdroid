@@ -71,7 +71,7 @@
         android:layout_gravity="start|bottom"
         android:background="@color/purple_200"
         android:onClick="texto"
-        android:text="@string/boton_7"
+        android:text="@string/onclick"
         android:textColor="#311B92" />
 
     <Button
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
         android:background="@color/purple_200"
-        android:text="boton_8"
+        android:text="@string/gato"
 
         android:textColor="#311B92"
         tools:ignore="HardcodedText" />
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:background="@color/purple_200"
-        android:text="@string/boton_9"
+        android:text="@string/intents"
         android:textColor="#311B92" />
 
 </FrameLayout>

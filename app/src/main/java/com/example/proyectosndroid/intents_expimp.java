@@ -14,6 +14,12 @@ public class intents_expimp extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intents_expimp);
+        findViewById(R.id.web).setOnClickListener(this);
+        findViewById(R.id.contactos).setOnClickListener(this);
+        findViewById(R.id.llamada).setOnClickListener(this);
+        findViewById(R.id.alarma).setOnClickListener(this);
+        findViewById(R.id.google).setOnClickListener(this);
+        findViewById(R.id.voz).setOnClickListener(this);
 
     }
 
