@@ -1,5 +1,6 @@
 package com.example.proyectosndroid;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,28 +33,13 @@ public class RecycleView extends AppCompatActivity {
         Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
         Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
         Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
-        Alumnos.add(new Alumno("Miguel","19170023","8715722538",19));
         re.setHasFixedSize(true);
         re.setLayoutManager(new LinearLayoutManager(this));
         re.setAdapter(aa);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }
