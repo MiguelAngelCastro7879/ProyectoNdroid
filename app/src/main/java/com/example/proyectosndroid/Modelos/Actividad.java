@@ -18,6 +18,9 @@ public class Actividad {
         this.intent = intent;
     }
 
+    public Actividad() {
+    }
+
     public Intent getIntent() {
         return intent;
     }

@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.proyectosndroid.Modelos.Actividad;
+import com.example.proyectosndroid.Adaptadores.LayoutAdapter;
+import com.example.proyectosndroid.Modelos.Layout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,13 +18,14 @@ import java.util.List;
 public class MenuLayout extends AppCompatActivity implements View.OnClickListener{
 
     RecyclerView r;
-    List<Actividad> actividades;
+    List<Layout> layouts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layouts);
 
-        List<Actividad> actividades = new ArrayList<>();
+        layouts = new ArrayList<>();
+        LayoutAdapter l_adapter = new LayoutAdapter(layouts);
 
         findViewById(R.id.btn1).setOnClickListener(this);findViewById(R.id.btn2).setOnClickListener(this);findViewById(R.id.btn3).setOnClickListener(this);
         findViewById(R.id.btn4).setOnClickListener(this);findViewById(R.id.btn5).setOnClickListener(this);findViewById(R.id.btn6).setOnClickListener(this);
@@ -46,28 +48,28 @@ public class MenuLayout extends AppCompatActivity implements View.OnClickListene
             public void onFinish() {
                 switch (v.getId()){
                     case R.id.btn1:
-                        setContentView(R.layout.linear_activity);
+                        startActivity(new Intent(MenuLayout.this, Linear.class));
                         break;
                     case R.id.btn2:
-                        setContentView(R.layout.relative_activity);
+                        startActivity(new Intent(MenuLayout.this, Relative.class));
                         break;
                     case R.id.btn3:
                         startActivity(new Intent(MenuLayout.this, calculadora_linear2.class));
                         break;
                     case R.id.btn4:
-                        setContentView(R.layout.linear_relative_activity);
+                        startActivity(new Intent(MenuLayout.this, RelativeLinear.class));
                         break;
                     case R.id.btn5:
-                        setContentView(R.layout.constraint_activity);
+                        startActivity(new Intent(MenuLayout.this, Constraint1.class));
                         break;
                     case R.id.btn6:
-                        setContentView(R.layout.constraint_activity2);
+                        startActivity(new Intent(MenuLayout.this, Constraint2.class));
                         break;
                     case R.id.btn8:
                         startActivity(new Intent(MenuLayout.this, tictactoe.class));
                         break;
                     case R.id.btn9:
-                        startActivity(new Intent(MenuLayout.this, intents_expimp.class));
+                        startActivity(new Intent(MenuLayout.this, IntentsImplicitos.class));
                         break;
 
                     default:

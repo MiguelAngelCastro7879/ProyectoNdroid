@@ -8,12 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class intents_expimp extends AppCompatActivity implements View.OnClickListener {
+public class IntentsImplicitos extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intents_expimp);
+        setContentView(R.layout.activity_intents_implicitos);
         findViewById(R.id.web).setOnClickListener(this);
         findViewById(R.id.contactos).setOnClickListener(this);
         findViewById(R.id.llamada).setOnClickListener(this);

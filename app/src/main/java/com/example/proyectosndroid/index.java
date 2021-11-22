@@ -21,7 +21,8 @@ public class index extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
         lista=findViewById(R.id.lista_actividades);
-        List<Actividad> actividades =new ArrayList<>();
+         actividades =new ArrayList<>();
+
         ActividadAdapter a = new ActividadAdapter(actividades);
         actividades.add(new Actividad("Layouts",
                 "Aqui vemos todas las actividades usando MenuLayout, tambien vemos la introduccion de los intents y los on click",

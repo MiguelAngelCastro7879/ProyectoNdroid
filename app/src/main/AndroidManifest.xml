@@ -10,13 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".Linear"
+            android:exported="false" />
+        <activity
+            android:name=".Relative"
+            android:exported="false" />
+        <activity
+            android:name=".RelativeLinear"
+            android:exported="false" />
+        <activity
+            android:name=".Constraint2"
+            android:exported="false" />
+        <activity
+            android:name=".Constraint1"
+            android:exported="false" />
+        <activity
             android:name=".RecycleView"
             android:exported="true" />
         <activity
             android:name=".index"
             android:exported="true" />
         <activity
-            android:name=".intents_expimp"
+            android:name=".IntentsImplicitos"
             android:exported="true" />
         <activity
             android:name=".tictactoe"
