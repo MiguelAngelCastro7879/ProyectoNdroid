@@ -4,24 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_calculadora_linear2.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_constraint1.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_constraint2.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_index.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_intents_expimp.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_layouts.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_linear.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_menu.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_presentacion.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_recycle_view.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_relative.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_relative_linear.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/constraint_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/constraint_activity2.xml" value="0.1" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/item.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/item2.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/item3.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/layouts_intents.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/linear_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/linear_relative_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/relative_activity.xml" value="0.209375" />
@@ -46,9 +36,13 @@
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid/app/src/main/res/layout/linear_activity2.xml" value="0.1828125" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid/app/src/main/res/layout/linear_relative_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid/app/src/main/res/layout/relative_activity.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.4197916666666667" />
         <entry key="app/src/main/res/layout/activity_calculadora_linear2.xml" value="0.22314814814814815" />
+        <entry key="app/src/main/res/layout/activity_examen.xml" value="0.36730072463768115" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22314814814814815" />
         <entry key="app/src/main/res/layout/activity_recycle_view.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/item3.xml" value="0.36730072463768115" />
+        <entry key="app/src/main/res/layout/item_exam.xml" value="0.36730072463768115" />
       </map>
     </option>
   </component>

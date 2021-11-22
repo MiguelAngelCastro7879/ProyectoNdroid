@@ -30,6 +30,9 @@ public class index extends AppCompatActivity {
         actividades.add(new Actividad("RecyclerView",
                 "Aqui vemos la primera actividad usando el recycler view, es algo ridiculo sabiendo que este es un recyclerview",
                 new Intent(index.this, RecycleView.class)));
+        actividades.add(new Actividad("Examen",
+                "Como carajos reprobe esto si estaba bien facil",
+                new Intent(index.this, Examen.class)));
 
         lista.setHasFixedSize(true);
         lista.setLayoutManager(new LinearLayoutManager(this));

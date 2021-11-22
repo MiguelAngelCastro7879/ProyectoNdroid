@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#0022FF"
+    android:background="@color/azul_cielo"
     android:layout_margin="5sp"
     android:padding="10sp"
     >
@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/imagen_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="108dp"
+        android:layout_height="156dp"
         app:layout_constraintBottom_toTopOf="@id/titulo_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,8 +13,17 @@ import com.example.proyectosndroid.RelativeLinear;
 import com.example.proyectosndroid.Tictactoe;
 import com.example.proyectosndroid.calculadora_linear2;
 
-public class relleno_datos {
-    private Intent[] intent;
+public class rellenoLayout {
+    private Class[] classes = {
+                Linear.class,
+                Relative.class,
+                calculadora_linear2.class,
+                RelativeLinear.class,
+                Constraint1.class,
+                Constraint2.class,
+                Tictactoe.class,
+                IntentsImplicitos.class
+    };
 
     private String[] titulo = {
             "Linear form",
@@ -27,18 +36,22 @@ public class relleno_datos {
             "Intents Implicitos"
     };
     private int[] imagen = {
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_background,
+            R.drawable.linear_form,
+            R.drawable.relat_calc,
+            R.drawable.linear,
+            R.drawable.relative,
+            R.drawable.constraint1,
+            R.drawable.constraint2,
+            R.drawable.gato,
+            R.drawable.intents,
     };
 
-    public relleno_datos() {
+    public rellenoLayout() {
 
+    }
+
+    public Class[] getClasses() {
+        return classes;
     }
 
     public String[] getTitulo() {

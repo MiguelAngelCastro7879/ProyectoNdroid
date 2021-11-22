@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="verde_lima">#7CFF5B</color>
     <color name="rojo_claro">#FF5252</color>
+    <color name="azul_cielo">#E60090FF</color>
+    <color name="menta">#FF9AE1AE</color>
 </resources>

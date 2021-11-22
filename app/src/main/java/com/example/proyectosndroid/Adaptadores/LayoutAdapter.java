@@ -1,6 +1,7 @@
 package com.example.proyectosndroid.Adaptadores;
 
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyectosndroid.Modelos.Layout;
 import com.example.proyectosndroid.R;
+import com.example.proyectosndroid.index;
+import com.example.proyectosndroid.presentacion;
 
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
 
 public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.ViewHolder> {
     List<Layout> layouts;
@@ -53,7 +57,17 @@ public class LayoutAdapter extends RecyclerView.Adapter<LayoutAdapter.ViewHolder
 
         @Override
         public void onClick(View v) {
-            v.getContext().startActivity(intent);
+
+            new CountDownTimer(500,1000) {
+                @Override
+                public void onTick(long l) {
+                }
+                @Override
+                public void onFinish() {
+                    v.getContext().startActivity(intent);
+
+                }
+            }.start();
 
         }
 
