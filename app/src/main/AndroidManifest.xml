@@ -34,7 +34,7 @@
             android:name=".IntentsImplicitos"
             android:exported="true" />
         <activity
-            android:name=".tictactoe"
+            android:name=".Tictactoe"
             android:exported="true" />
         <activity
             android:name=".presentacion"

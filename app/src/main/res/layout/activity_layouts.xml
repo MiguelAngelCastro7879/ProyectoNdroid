@@ -4,94 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuLayout"
-    android:padding="20dp">
+    android:padding="10dp">
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start|top"
-        android:background="@color/purple_200"
-        android:text="@string/linearlayout"
-        android:textColor="#311B92" />
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        android:background="@color/purple_200"
-        android:text="@string/relativecalc"
-        android:textColor="#311B92" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|top"
-        android:background="@color/purple_200"
-        android:text="@string/linearcalc"
-        android:textColor="#311B92" />
-
-
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|start"
-        android:background="@color/purple_200"
-        android:text="@string/rl_calc"
-        android:textColor="#311B92" />
-
-    <Button
-        android:id="@+id/btn5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/purple_200"
-        android:text="@string/constraint1"
-
-        android:textColor="#311B92" />
-
-    <Button
-        android:id="@+id/btn6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|end"
-        android:background="@color/purple_200"
-        android:text="@string/constraint2"
-        android:textColor="#311B92"
-        tools:ignore="RtlHardcoded" />
-
-
-    <Button
-        android:id="@+id/btn7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start|bottom"
-        android:background="@color/purple_200"
-        android:onClick="texto"
-        android:text="@string/onclick"
-        android:textColor="#311B92" />
-
-    <Button
-        android:id="@+id/btn8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:background="@color/purple_200"
-        android:text="@string/gato"
-
-        android:textColor="#311B92"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/btn9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:background="@color/purple_200"
-        android:text="@string/intents"
-        android:textColor="#311B92" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>
