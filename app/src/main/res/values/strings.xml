@@ -52,4 +52,6 @@
     <string name="onclick">onCLick</string>
     <string name="gato">gato</string>
     <string name="intents">intents</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="titulo_index">ACTIVIDADES DE TODO TIPO</string>
 </resources>

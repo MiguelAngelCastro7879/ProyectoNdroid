@@ -34,7 +34,7 @@
             android:name=".calculadora_linear2"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuLayout"
             android:exported="true" />
     </application>
 

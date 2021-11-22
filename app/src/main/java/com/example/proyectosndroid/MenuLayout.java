@@ -4,15 +4,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+import com.example.proyectosndroid.Modelos.Actividad;
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class MenuLayout extends AppCompatActivity implements View.OnClickListener{
+
+    RecyclerView r;
+    List<Actividad> actividades;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_layouts);
+
+        List<Actividad> actividades = new ArrayList<>();
+
         findViewById(R.id.btn1).setOnClickListener(this);findViewById(R.id.btn2).setOnClickListener(this);findViewById(R.id.btn3).setOnClickListener(this);
         findViewById(R.id.btn4).setOnClickListener(this);findViewById(R.id.btn5).setOnClickListener(this);findViewById(R.id.btn6).setOnClickListener(this);
         findViewById(R.id.btn8).setOnClickListener(this);findViewById(R.id.btn9).setOnClickListener(this);
@@ -24,10 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        new CountDownTimer(3000,1000) {
+        new CountDownTimer(2000,1000) {
             @Override
             public void onTick(long l) {
-                Toast.makeText(MainActivity.this,""+l/1000,Toast.LENGTH_SHORT).show();
+                Toast.makeText(MenuLayout.this,""+l/1000,Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -40,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         setContentView(R.layout.relative_activity);
                         break;
                     case R.id.btn3:
-                        startActivity(new Intent(MainActivity.this, calculadora_linear2.class));
+                        startActivity(new Intent(MenuLayout.this, calculadora_linear2.class));
                         break;
                     case R.id.btn4:
                         setContentView(R.layout.linear_relative_activity);
@@ -52,10 +64,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         setContentView(R.layout.constraint_activity2);
                         break;
                     case R.id.btn8:
-                        startActivity(new Intent(MainActivity.this, tictactoe.class));
+                        startActivity(new Intent(MenuLayout.this, tictactoe.class));
                         break;
                     case R.id.btn9:
-                        startActivity(new Intent(MainActivity.this, intents_expimp.class));
+                        startActivity(new Intent(MenuLayout.this, intents_expimp.class));
                         break;
 
                     default:
