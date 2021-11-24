@@ -10,16 +10,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.proyectosndroid.Modelos.Elemento;
+import com.example.proyectosndroid.Modelos.Examen;
 import com.example.proyectosndroid.R;
 
 import java.util.List;
 
-public class ElementoAdapter extends RecyclerView.Adapter<ElementoAdapter.ViewHolder> {
-    List<Elemento> elementos;
+public class ExamenAdapter extends RecyclerView.Adapter<ExamenAdapter.ViewHolder> {
+    List<Examen> examen;
 
-    public ElementoAdapter(List<Elemento> elementos) {
-        this.elementos = elementos;
+    public ExamenAdapter(List<Examen> examen) {
+        this.examen = examen;
     }
 
     @NonNull
@@ -31,13 +31,13 @@ public class ElementoAdapter extends RecyclerView.Adapter<ElementoAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Elemento e = elementos.get(position);
+        Examen e = examen.get(position);
         holder.llenar(e);
     }
 
     @Override
     public int getItemCount() {
-        return elementos.size();
+        return examen.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
@@ -51,7 +51,7 @@ public class ElementoAdapter extends RecyclerView.Adapter<ElementoAdapter.ViewHo
             itemView.setOnClickListener(this);
         }
 
-        public void llenar(Elemento e) {
+        public void llenar(Examen e) {
             titulo.setText(e.getTitulo());
             imagen.setImageResource(e.getImagen());
             intent=e.getIntent();

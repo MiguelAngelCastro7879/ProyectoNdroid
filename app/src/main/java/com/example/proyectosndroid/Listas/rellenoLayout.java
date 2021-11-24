@@ -1,6 +1,7 @@
 package com.example.proyectosndroid.Listas;
 
 import android.content.Intent;
+import android.widget.ImageView;
 
 import com.example.proyectosndroid.Constraint1;
 import com.example.proyectosndroid.Constraint2;
@@ -47,7 +48,6 @@ public class rellenoLayout {
     };
 
     public rellenoLayout() {
-
     }
 
     public Class[] getClasses() {

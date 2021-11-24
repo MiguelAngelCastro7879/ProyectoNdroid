@@ -35,8 +35,8 @@ public class MenuLayout extends AppCompatActivity{
         for(int i = 0; i< datos.getClasses().length; i++){
             layouts.add(new Layout(datos.getImagen()[i],
                     datos.getTitulo()[i],
-                    new Intent(MenuLayout.this, datos.getClasses()[i])));
-
+                    new Intent(MenuLayout.this,
+                    datos.getClasses()[i])));
         }
 
         r.setLayoutManager(new GridLayoutManager(this, 2));

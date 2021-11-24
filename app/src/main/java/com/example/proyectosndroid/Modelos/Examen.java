@@ -2,12 +2,12 @@ package com.example.proyectosndroid.Modelos;
 
 import android.content.Intent;
 
-public class Elemento {
+public class Examen {
     private String titulo;
     private Intent intent;
     private int imagen;
 
-    public Elemento(String titulo, Intent intent, int imagen) {
+    public Examen(String titulo, Intent intent, int imagen) {
         this.titulo = titulo;
         this.intent = intent;
         this.imagen = imagen;
