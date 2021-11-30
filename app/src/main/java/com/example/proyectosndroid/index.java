@@ -33,6 +33,9 @@ public class index extends AppCompatActivity {
         actividades.add(new Actividad("Examen",
                 "Como carajos reprobe esto si estaba bien facil",
                 new Intent(index.this, Examen.class)));
+        actividades.add(new Actividad("PokeLista",
+                "Practicando usando Voley usando una api de pokemon",
+                new Intent(index.this, VoleyActivity.class)));
 
         lista.setHasFixedSize(true);
         lista.setLayoutManager(new LinearLayoutManager(this));

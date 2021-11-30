@@ -10,4 +10,6 @@
     <color name="rojo_claro">#FF5252</color>
     <color name="azul_cielo">#E60090FF</color>
     <color name="menta">#FF9AE1AE</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="rojo">#FF0000</color>
 </resources>

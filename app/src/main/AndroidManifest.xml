@@ -3,6 +3,7 @@
     package="com.example.proyectosndroid">
 
     <permission android:name="android.permission.CALL_PHONE"></permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
