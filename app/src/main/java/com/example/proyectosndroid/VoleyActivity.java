@@ -4,58 +4,81 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.widget.TextView;
 
+import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.JsonRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.proyectosndroid.Adaptadores.PokemonAdapter;
 import com.example.proyectosndroid.Modelos.Pokemon;
+import com.example.proyectosndroid.Modelos.VolleySingleton;
+import com.google.gson.Gson;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.nio.charset.StandardCharsets;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
 public class VoleyActivity extends AppCompatActivity {
 
     RecyclerView pokeLista;
+    TextView  texto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_voley);
         pokeLista = findViewById(R.id.poke_lista);
+        texto = findViewById(R.id.textView);
         RequestQueue solicitud = Volley.newRequestQueue(this);
-        String url = "https://pokeapi.co/api/v2/pokemon?limit=151";
+        String url = "https://pokeapi.co/api/v2/pokemon?limit=150";
+        //List<Pokemon> pokemonList = new ArrayList<>();
+        //PokemonAdapter pa = new PokemonAdapter(pokemonList);
+        //pokemonList.add(new Pokemon("a"));
 
-        List<Pokemon> pokemonList = new ArrayList<>();
-        PokemonAdapter pa = new PokemonAdapter(pokemonList);
-        pokemonList.add(new Pokemon("a"));
-
-        //StringRequest respuestaCadena = new StringRequest
-        JsonObjectRequest respuestaCadena = new JsonObjectRequest(
-                //Request.Method.GET,
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(
+                Request.Method.GET,
                 url,
-                new Response.Listener<JSONObject>(){
+                null,
+                new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
+                            //texto.setText(response.toString());
+                        final Gson gson = new Gson();
+                        try {
+                            List<Pokemon> pokemonList = new ArrayList<>();
+                            JSONArray pokemonJson = response.getJSONArray("results");
 
-                        for (int i = 0; i < 3; i++){
-                            try {
+                            //texto.setText(pokemonJson.length());
 
-                                JSONObject jsonObject = response.getJSONObject(String.valueOf(i));
-                                pokemonList.add(new Pokemon(jsonObject.getString("title")));
 
-                            } catch (Exception e) {
-                                e.printStackTrace();
+                            final Type tipoEnvoltorioEmpleado = new TypeToken<Envoltorio<Pokemon>>(){}.getType();
+
+///https://www.adictosaltrabajo.com/2012/09/17/gson-java-json/
+                            for(int i = 0; i<pokemonJson.length(); i++){
+                                //JSONObject json = pokemonJson.getJSONObject(i);
+                                Pokemon pok = gson.fromJson(pokemonJson.getJSONObject(i).toString(),Pokemon.class);
+                                //pokemonList.add(new Pokemon());
+
+                                //Pokemon pok = new Pokemon(json.getString("name"));
+
+                                pokemonList.add(pok);
+                                //texto.setText(json.getString("name"));
                             }
-                        }
 
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -66,44 +89,12 @@ public class VoleyActivity extends AppCompatActivity {
                 }
         );
 
+//        VolleySingleton.getMiInstancia(this).addToRequestQueue(stringRequest);
+        VolleySingleton.getMiInstancia(this).addToRequestQueue(jsonRequest);
+
         pokeLista.setHasFixedSize(true);
         pokeLista.setLayoutManager(new LinearLayoutManager(this));
         pokeLista.setAdapter(pa);
     }
+
 }
-/*
-private void getData() {
-    final ProgressDialog progressDialog = new ProgressDialog(this);
-    progressDialog.setMessage("Loading...");
-    progressDialog.show();
-
-    JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
-        @Override
-        public void onResponse(JSONArray response) {
-            for (int i = 0; i < response.length(); i++) {
-                try {
-                    JSONObject jsonObject = response.getJSONObject(i);
-                    Movie movie = new Movie();
-                    movie.setTitle(jsonObject.getString("title"));
-                    movie.setRating(jsonObject.getInt("rating"));
-                    movie.setYear(jsonObject.getInt("releaseYear"));
-
-                    movieList.add(movie);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    progressDialog.dismiss();
-                }
-            }
-            adapter.notifyDataSetChanged();
-            progressDialog.dismiss();
-        }
-    }, new Response.ErrorListener() {
-        @Override
-        public void onErrorResponse(VolleyError error) {
-            Log.e("Volley", error.toString());
-            progressDialog.dismiss();
-        }
-    });
-    RequestQueue requestQueue = Volley.newRequestQueue(this);
-    requestQueue.add(jsonArrayRequest);
-}*/

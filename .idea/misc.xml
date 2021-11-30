@@ -9,13 +9,11 @@
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_presentacion.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_recycle_view.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/activity_voley.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/constraint_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/constraint_activity2.xml" value="0.1" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/item.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/linear_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/linear_relative_activity.xml" value="0.209375" />
-        <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/pokemon.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/relative_activity.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectoNdroid/app/src/main/res/layout/tictactoe.xml" value="0.209375" />
         <entry key="..\:/Users/mike_/AndroidStudioProjects/ProyectosNdroid - copia/app/src/main/res/layout/activity_calculadora_linear2.xml" value="0.209375" />
@@ -42,7 +40,9 @@
         <entry key="app/src/main/res/layout/activity_calculadora_linear2.xml" value="0.22314814814814815" />
         <entry key="app/src/main/res/layout/activity_examen.xml" value="0.36730072463768115" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22314814814814815" />
+        <entry key="app/src/main/res/layout/activity_peticiones.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_recycle_view.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_voley.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/layout/item3.xml" value="0.36730072463768115" />
         <entry key="app/src/main/res/layout/item_exam.xml" value="0.36730072463768115" />
       </map>
