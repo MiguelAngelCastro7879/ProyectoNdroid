@@ -41,13 +41,15 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView poke_nombre;
+        String url;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             poke_nombre = itemView.findViewById(R.id.poke_nombre);
         }
 
         public void llenar(Pokemon p) {
-            poke_nombre.setText(p.getNombre());
+            poke_nombre.setText(p.getName());
+            this.url = p.getUrl();
         }
     }
 }

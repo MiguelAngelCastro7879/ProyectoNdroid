@@ -1,18 +1,18 @@
 package com.example.proyectosndroid.Modelos;
 
 public class Pokemon {
-    private String nombre;
+    private String name;
     private String url;
 
     public Pokemon() {
     }
 
-    public Pokemon(String nombre) {
-        this.nombre = nombre;
+    public Pokemon(String name) {
+        this.name = this.name;
     }
 
-    public Pokemon(String nombre, String url) {
-        this.nombre = nombre;
+    public Pokemon(String name, String url) {
+        this.name = name;
         this.url = url;
     }
 
@@ -22,10 +22,10 @@ public class Pokemon {
     public void setUrl(String url) {
         this.url = url;
     }
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 }

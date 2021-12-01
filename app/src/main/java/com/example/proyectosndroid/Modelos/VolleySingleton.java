@@ -29,7 +29,7 @@ public class VolleySingleton {
         }
         return miInstancia;
     }
-    public <Tipo> void addToRequestQueue(Request<Tipo> req){
+    public <T> void addToRequestQueue(Request<T> req){
         getRequestQueue().add(req);
     }
 
