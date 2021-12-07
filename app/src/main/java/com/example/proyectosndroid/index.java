@@ -36,6 +36,9 @@ public class index extends AppCompatActivity {
         actividades.add(new Actividad("PokeLista",
                 "Practicando usando Voley usando una api de pokemon",
                 new Intent(index.this, VoleyActivity.class)));
+        actividades.add(new Actividad("Mandar datos a adafruit",
+                "Se supone que debe mandar datos a adafruit",
+                new Intent(index.this, CONEXION_IMPORTANTE.class)));
 
         lista.setHasFixedSize(true);
         lista.setLayoutManager(new LinearLayoutManager(this));

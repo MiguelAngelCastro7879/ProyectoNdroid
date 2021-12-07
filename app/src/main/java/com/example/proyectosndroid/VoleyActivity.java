@@ -1,6 +1,7 @@
 package com.example.proyectosndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -69,7 +70,7 @@ public class VoleyActivity extends AppCompatActivity {
                             PokemonAdapter pa = new PokemonAdapter(ListaPokemones);
 
                             recPokemon.setHasFixedSize(true);
-                            recPokemon.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                            recPokemon.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
                             recPokemon.setAdapter(pa);
 
 
